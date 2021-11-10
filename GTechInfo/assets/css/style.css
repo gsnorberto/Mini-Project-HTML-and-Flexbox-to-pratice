@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.nav_header{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    height: 100px;
+    background-color: bisque;
+    
+}
+
+.logo_nav_header{
+
+}
+
+.menu_nav_header{
+    
+}
