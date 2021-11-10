@@ -6,21 +6,81 @@ body{
 header{
     display: flex;
     justify-content: center;
+    height: 120px;
+    padding-top: 10px;
 }
 
-.nav_header{
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image:url('../img/banner4.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    object-fit: fill;
+}
+
+.container{
     display: flex;
     justify-content: space-between;
     width: 990px;
-    height: 100px;
-    background-color: bisque;
-    
 }
 
 .logo_nav_header{
+    display: flex;
+    align-items: center;
+}
 
+.logo_nav_header img{
+    max-height: 100px;
+    height: auto;
+    width: auto;
 }
 
 .menu_nav_header{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #483D8B;
+    background-color: #FFFFFF;
+    padding: 12px;
+    font-family: arial;
+}
+
+nav .active a,
+li:hover
+{
+    background-color: #483D8B;
+    color: #FFFFFF;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.banner_headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    color: #FFFFFF;
+}
+.banner_headline h1{
     
+    font-size: 50px;
+    text-shadow: 0px 1px 0px #000000 ;
+}
+.banner_options{
+    height: 210px;
 }
