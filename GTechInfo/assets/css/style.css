@@ -111,17 +111,17 @@ li a:hover
 .banner_options_2,
 .banner_options_3{
     flex: 1;
-    color: #000000;
+    color: #FFFFFF;
 }
 .banner_options_1{
-    background-color: #2c567e;
+    background-color: #355b7e;
     opacity: 0.7;
     border-radius: 5px;
     padding-left: 3px;
     box-shadow: 10px 5px 5px black;
 }
 .banner_options_2{
-    background-color: #c2edfe;
+    background-color: #9bcfe4;
     opacity: 0.8;
     border-radius: 5px;
     box-shadow: 10px 5px 5px black;
@@ -136,22 +136,24 @@ li a:hover
     font-size: 22px;
     font-weight: bold;
     padding: 10px;
+    text-shadow: 1px 1px 3px black;
 }
 .banner_description{
     font-size: 14px;
     margin: 20px 0px 20px 0px;
     padding: 0px 10px 0px 10px;
-    
+    text-shadow: 1px 1px 2px black;
 }
 .banner_button{
-    border: #000000 solid 1px;
     border-radius: 3px;
+    background-color: #FFFFFF;
     color: #000000;
     text-decoration: none;
     width: 30px;
     height: 20px;
     margin: 0px 0px 0px 10px;
     padding: 3px;
+    box-shadow: 1px 1px 1px #000000;
 }
 .banner_button:hover{
     background-color: #000000;
