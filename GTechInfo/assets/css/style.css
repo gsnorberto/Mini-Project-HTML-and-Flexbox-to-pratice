@@ -10,7 +10,12 @@ body{
 .container{
     display: flex;
     justify-content: space-between;
-    width: 990px;
+    max-width: 990px;
+    height: auto;
+}
+
+header .container{
+    justify-content: space-between;
 }
 
 .column{
@@ -41,7 +46,7 @@ body{
 /* HEADER */
 header{
     display: flex;
-    justify-content: center;
+    
     height: 120px;
     padding-top: 10px;
 }
@@ -56,7 +61,7 @@ header{
 }
 .menu_nav_header{
     display: flex;
-    align-items: center;
+    
 }
 nav ul{
     display: flex;
@@ -85,6 +90,7 @@ li a:hover
     background-image:url('../img/banner4.jpg');
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 .banner_headline{
     display: flex;
@@ -111,15 +117,16 @@ li a:hover
 }
 .banner_options{
     display: flex;
-    height: 210px;
-    padding: 100px 0px 10px 0px;
-    max-height: 180px;
+    padding: 100px 10px 10px 10px;
 }
 .banner_options_1,
 .banner_options_2,
 .banner_options_3{
+    height: auto;
     flex: 1;
     color: #FFFFFF;
+    padding: 10px;
+    
 }
 .banner_options_1{
     background-color: #355b7e;
@@ -152,6 +159,9 @@ li a:hover
     text-shadow: 1px 1px 2px black;
 }
 .banner_button{
+    margin-bottom: 10px;
+}
+.banner_button a{
     border-radius: 3px;
     background-color: #FFFFFF;
     color: #000000;
@@ -368,4 +378,66 @@ footer .icon i{
     margin: 10px 0px 5px 0px;
     /* padding: 0px 10px 0px 10px; */
     text-shadow: 1px 1px 2px black;
+}
+
+
+/* MEDIA QUERY - RESPONSIVITY */
+
+@media(max-width:615px){
+
+    .banner_headline{
+        padding: 20px;
+    }
+
+    .banner_headline h1{
+        font-size: 2rem;
+    }
+
+    .banner_headline h2{
+        font-size: 1rem;
+    }
+
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    #geral section, aside{
+        padding: 20px;
+    }
+
+    .footer_menu{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer_area{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    header .container{
+        flex-direction: row;
+        
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    header{
+        height: auto;
+    }
+
+    
+
+    /* .banner_options_1,
+    .banner_options_2,
+    .banner_options_3{
+        padding-bottom: 20px;
+    } */
 }
