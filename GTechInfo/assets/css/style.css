@@ -10,12 +10,8 @@ body{
 .container{
     display: flex;
     justify-content: space-between;
-    max-width: 990px;
+    width: 990px;
     height: auto;
-}
-
-header .container{
-    justify-content: space-between;
 }
 
 .column{
@@ -46,14 +42,16 @@ header .container{
 /* HEADER */
 header{
     display: flex;
-    
+    justify-content: center;
     height: 120px;
     padding-top: 10px;
 }
-.logo_nav_header{
+
+header .container{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
+
 .logo_nav_header img{
     max-height: 100px;
     height: auto;
@@ -61,10 +59,12 @@ header{
 }
 .menu_nav_header{
     display: flex;
-    
+    flex-direction: column;
+    justify-content: center;
 }
 nav ul{
     display: flex;
+    justify-content: center;
     list-style: none;
 }
 nav a{
@@ -90,7 +90,7 @@ li a:hover
     background-image:url('../img/banner4.jpg');
     background-position: center;
     background-size: cover;
-    position: relative;
+    
 }
 .banner_headline{
     display: flex;
@@ -380,6 +380,21 @@ footer .icon i{
     text-shadow: 1px 1px 2px black;
 }
 
+.menu_mobile{
+    background-color: #DCDCDC;
+    border-radius: 3px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 20px 40px 0;
+}
+
+.mm_line{
+    height: 3px;
+    background-color: #808080;
+    margin: 4px;
+    border-radius: 3px;
+}
 
 /* MEDIA QUERY - RESPONSIVITY */
 
@@ -422,18 +437,30 @@ footer .icon i{
 
     header .container{
         flex-direction: row;
-        
     }
 
     nav ul {
+        padding: 0;
         flex-direction: column;
+        z-index: 1;
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 80%;
+        background-color: #FFFFFF;
+        box-shadow: 10px 5px 5px black;
+        margin: 0;
     }
 
     header{
         height: auto;
     }
 
-    
+    .menu_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
     /* .banner_options_1,
     .banner_options_2,

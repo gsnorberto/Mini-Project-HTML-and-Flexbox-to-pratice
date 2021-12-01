@@ -8,6 +8,18 @@
     <meta name='viewport' content='width=device-width, initial-scale=0'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menu_mobile").addEventListener("click", function(){
+                if(document.querySelector(".menu_nav_header nav ul").style.display == 'flex' ){
+                    document.querySelector(".menu_nav_header nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu_nav_header nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
 </head>
 <body>
     <!-- HEADER - NAV BAR -->
@@ -28,6 +40,11 @@
             <!-- NAVIGATION BAR -->
             <div class="menu_nav_header">
                 <nav>
+                    <div class="menu_mobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="">HOME</a></li>
                         <li><a href="">CONTATO</a></li>
@@ -41,7 +58,7 @@
         </div>
     </header>
     <!-- SECTION 1 - BANNER -->
-    <section id="banner" >
+    <section id="banner">
         <div class="container column">
             <!--  -->
             <div class="banner_headline">
